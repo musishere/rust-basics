@@ -1,0 +1,13 @@
+fn main() {
+    let mut counter = 0;
+
+    let result = loop {
+        counter = counter + 1;
+
+        if counter == 10 {
+            break counter;
+        }
+    };
+
+    println!("this is the value: {}", result);
+}
